@@ -192,7 +192,7 @@ body {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #D8D3A8;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -243,6 +243,36 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+
+
+.contact-infos {
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #D8D3A8;
+	border-radius: 8px;
+}
+
+.contact-infos h4 {
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.contact-infos p {
+	margin: 5px 0;
+	font-size: 16px;
+}
+
+.contact-infos a {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.contact-infos a:hover {
+	text-decoration: underline;
+}
+
+
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -353,4 +383,6 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
+
 
