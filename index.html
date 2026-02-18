@@ -35,8 +35,8 @@
 		"@context": "https://schema.org",
 		"@type": "Photographer",
 		"name": "Nina Carducci",
-		"image": "https://tonsite.com/assets/images/nina-c.webp",
-		"url": "https://tonsite.com/",
+		"image": "https://karouna87.github.io/Nina-Carducci/assets/images/nina-c.webp",
+		"url": "https://karouna87.github.io/Nina-Carducci/",
 		"telephone": "+33556677889",
 		"address": {
 			"@type": "PostalAddress",
@@ -45,7 +45,22 @@
 			"postalCode": "33200",
 			"addressCountry": "FR"
 		},
-		"openingHours": "Mo-Fr 10:00-19:00",
+		"openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+			],
+			"opens": "10:00",
+			"closes": "19:00"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "Bordeaux"
+		},
 		"sameAs": [
 			"https://www.instagram.com/ninacarducci.photo/"
 		]
