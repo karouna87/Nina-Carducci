@@ -1,11 +1,20 @@
 body {
-	max-width: 1920px;
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+a {
+    color: #0a0a0a;
+}
+
+a:hover {
+    color: #000000;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -19,14 +28,17 @@ body {
 }
 
 .top-header .name {
-	font-size: 26px;
+	font-size: 28px;
+	font-weight: 800;
+	color: #000000;
 }
 
 .nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 0;
+	font-weight: 500;
 }
 
 .nav li {
@@ -35,7 +47,14 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: #121212;
+	font-weight: 600;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #000000;
+	background-color: #a0a0a0;
 }
 
 .social-link img {
@@ -44,7 +63,7 @@ body {
 
 #about {
 	display: flex;
-	background-color: #F6D2B8;
+	background-color:  #fcece0;
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
@@ -69,8 +88,14 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
 #about-me {
 	flex: 2
 }
@@ -87,7 +112,8 @@ body {
 }
 .about-me_p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 16px;
+	color:  #1a1a1a;
 }
 
 .title{
@@ -143,7 +169,8 @@ body {
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
-	font-weight: 300;
+	 color: #222222;
+    font-weight: 400;
 }
 .quote__author {
 	font-family: Spectral;
@@ -156,6 +183,7 @@ body {
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -175,7 +203,8 @@ body {
 }
 
 .service {
-	background-color: white;
+	background-color: #ffffff;
+    color: #000000;
 	max-width: 390px;
 	width: 30%;
 	height: 337px;
@@ -184,6 +213,20 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.service h3,
+.service p,
+.service span {
+    color: #000000;
+}
+
+#services h2,
+#services h3,
+#services h4,
+#services p,
+#services span {
+    color: #000000;
 }
 
 #contact {
@@ -197,6 +240,9 @@ body {
 #contact .container {
 	display: flex;
 }
+
+
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -242,7 +288,6 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-
 .contact-infos {
 	margin-bottom: 30px;
 	padding: 20px;
@@ -268,6 +313,59 @@ input[type="submit"] {
 
 .contact-infos a:hover {
 	text-decoration: underline;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #BEB45A;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+	z-index: 10;
+	opacity: 0.8;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.about-me__title, .name, .title {
+	color: #000000 !important;
+}
+
+.social-link a::after {
+    content: "Lien social";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #111111 !important;
 }
 
 
