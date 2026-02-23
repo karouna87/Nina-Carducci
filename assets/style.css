@@ -2,12 +2,15 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	color: #000000;
 }
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	color: #000000;
 }
 a {
+	text-decoration: none;
     color: #0a0a0a;
 }
 
@@ -16,7 +19,7 @@ a:hover {
 }
 
 .top-header {
-	background-color: white;
+	background-color: #ffffff;
 	position: sticky;
 	top:0;
 	z-index: 1000;
@@ -28,8 +31,9 @@ a:hover {
 }
 
 .top-header .name {
+	background-color: #ffffff;
 	font-size: 28px;
-	font-weight: 800;
+	font-weight: 600;
 	color: #000000;
 }
 
@@ -58,7 +62,8 @@ a:hover {
 }
 
 .social-link img {
-	width: 20px;
+    width: 20px;
+	color: #000000;
 }
 
 #about {
@@ -203,7 +208,8 @@ img {
 }
 
 .service {
-	background-color: #ffffff;
+	background-color: #ffffff !important;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: #000000;
 	max-width: 390px;
 	width: 30%;
